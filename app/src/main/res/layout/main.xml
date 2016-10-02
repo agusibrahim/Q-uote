@@ -1,11 +1,74 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_marginTop="20dp"
+	android:padding="10dp">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Save"
+		android:id="@+id/savebtn"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Surat"/>
+
+	<Spinner
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:entries="@array/sura_names"
+		android:id="@+id/surat"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Ayat"/>
+
+	<Spinner
+		android:layout_height="wrap_content"
+		android:layout_width="100dp"
+		android:id="@+id/ayat"/>
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="#E6E6E6"
+			android:id="@+id/target">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="Small Text"
+				android:gravity="center"
+				android:id="@+id/arab"
+				android:textSize="30sp"
+				android:lineSpacingExtra="-5dp"
+				android:padding="5dp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Text"
+				android:id="@+id/terjemah"
+				android:textStyle="italic"
+				android:padding="5dp"
+				android:textSize="15sp"/>
+
+		</LinearLayout>
+
+	</ScrollView>
 
 </LinearLayout>
+
