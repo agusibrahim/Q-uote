@@ -1,6 +1,7 @@
 
 **Q-uote**
 -------
+* * WIP
 
 Quran Quote for Android
 ![image](https://github.com/agusibrahim/Q-uote/blob/master/Screenshot_20161002-194554.png?raw=true)
@@ -11,6 +12,3 @@ Quran Quote for Android
 Database diambil dari proyek open source Quran for Android  https://github.com/quran/quran_android
 ### Pembuat
 [Agus Ibrahim](http://fb.me/mynameisagoes)
-
-
-
